@@ -15,5 +15,8 @@ const props = defineProps({
   </div>
 </template>
 
-<style>
+<style scoped>
+img {
+    width: clamp(69px, 18vw, 175px);
+}
 </style>
