@@ -1,1 +1,19 @@
 <!-- Card Component -->
+
+<script setup>
+const props = defineProps({
+    back: String, //img
+    front: String, //img
+    reveal: Boolean
+});
+</script>
+
+<template>
+  <div>
+    <img v-if="!reveal" :src="back" alt="pokemon card backcard" />
+    <img v-else :src="front" alt="pokemonRandom" />
+  </div>
+</template>
+
+<style>
+</style>
