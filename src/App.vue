@@ -42,7 +42,7 @@ function checkCards(isMatch) {
   <header>
     <h1>¡PokeMemory! </h1>
     <RadialProgress :diameter="80" :completed-steps="state.score" :total-steps="state.totalMatches">
-      {{state.score}}
+       {{state.score}}/{{state.totalMatches}}
     </RadialProgress>
   </header>
 
